@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var cardFooter = document.querySelector(".card-footer");
     var cocktailInfo = document.querySelectorAll('.cocktail-info');
     var cocktailInstructions = document.getElementById('cocktailInstructions').querySelector('div');
+    var initialInstructions = document.querySelector('.initialInstructions'); // Updated class name
+
     backButton.style.display = 'none';
     refreshButton.style.display = 'none';
 
@@ -19,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     generateButton.addEventListener('click', function () {
         backButton.style.display = 'block';
         refreshButton.style.display = 'block';
-        cocktailInstructions.style.display = 'none';
+        initialInstructions.style.display = 'none';
         cocktailInfo.forEach(function (element) {
             element.style.display = 'block';
         });
@@ -142,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
             currentCocktailIndex = -1;
             cocktailInfo.forEach(function (element) {
             });
-            cocktailInstructions.style.display = 'block';
+            initialInstructions.style.display = 'block';
             localStorage.removeItem('cocktails');
         } else {
             generateButton.click();
