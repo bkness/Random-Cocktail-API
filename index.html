@@ -18,33 +18,52 @@
                 <div class="card-header">
                     <h1 class="card-title">Random Cocktail App</h1>
                 </div>
-                <div class="card-body">
-                    <div id="cocktailInstructions" class="instructions">
+
+                <!-- Initial instructions -->
+                <div class="initialInstructions">
+                    <div id="card-body">
                         <h2 class="card-text">Here is an app I created that will show you a list of descriptions based
                             on a
                             random cocktail that is generated!</h2>
                     </div>
-                    <!-- Elements to display cocktail information -->
-                    <div id="cocktailName"></div>
-                    <img id="cocktailImage" src="" alt="Cocktail Image">
-                    <div id="cocktailCategory"></div>
-                    <div id="cocktailAlcoholic"></div>
-                    <div id="cocktailGlass"></div>
-                    <ul id="ingredientList"></ul>
-                    <div id="cocktailInstructions"></div>
                 </div>
+
+                <!-- Elements to display cocktail information -->
+                <div class="cocktail-info" id="cocktailName">
+                    <h3>Name:</h3>
+                    <div></div>
+                </div>
+                <div class="cocktail-info" id="cocktailCategory">
+                    <h3>Category:</h3>
+                    <div></div>
+                </div>
+                <div class="cocktail-info" id="cocktailAlcoholic">
+                    <h3>Alcoholic:</h3>
+                    <div></div>
+                </div>
+                <div class="cocktail-info" id="cocktailGlass">
+                    <h3>Glass:</h3>
+                    <div></div>
+                </div>
+                <div class="cocktail-info" id="ingredientList">
+                    <h3>Ingredients:</h3>
+                    <ul></ul>
+                </div>
+                <div class="cocktail-info" id="cocktailInstructions">
+                    <h3>Instructions:</h3>
+                    <div></div>
+                </div>
+                <div class="cocktail-info" id="cocktailImage">
+                    <img src="" alt="Cocktail Image">
+                </div>
+
                 <div class="card-footer">
-                    <button class="btn btn-primary w-100">Generate Cocktail</button>
+                    <button class="btn btn-primary w-100" id="generateButton">Generate Cocktail</button>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-
-</body>
-
-<script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
 </body>
 
 </html>
