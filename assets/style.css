@@ -46,7 +46,7 @@ body {
 
 .card-title {
     font-size: 2rem;
-    color: white;
+    color: orange;
 }
 
 .card-text {
@@ -74,14 +74,15 @@ body {
 
 /* Styling for headers */
 h3 {
+    margin-top: 8px;
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    color: white;
+    font-size: 2rem;
+    color: orange;
 }
 
 /* Styling for text */
 .card-text {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: white;
 }
 
@@ -95,6 +96,11 @@ h3 {
     border-top: none;
 }
 
+#backButton, #refreshButton {
+    display: none;
+}
+
+
 /* Styling for card image */
 #cocktailImage img {
     width: 100%;
@@ -102,9 +108,9 @@ h3 {
 }
 
 /* Hiding elements */
-.hidden { 
-    display: none;
-}
+/* .hidden {  */
+    /* display: none; */
+/* } */
 
 /* Bootstrap Overrides */
 .card-header,
