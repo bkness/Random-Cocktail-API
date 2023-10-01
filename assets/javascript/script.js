@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 cocktailName.innerText = data.drinks[0].strDrink;
                 cocktailImage.src = data.drinks[0].strDrinkThumb;
-                cocktailCategory.innerText = 'Category: ' + data.drinks[0].strCategory;
-                cocktailAlcoholic.innerText = 'Alcoholic: ' + data.drinks[0].strAlcoholic;
-                cocktailGlass.innerText = 'Glass: ' + data.drinks[0].strGlass;
+                cocktailCategory.innerText = data.drinks[0].strCategory;
+                cocktailAlcoholic.innerText = data.drinks[0].strAlcoholic;
+                cocktailGlass.innerText = data.drinks[0].strGlass;
 
                 ingredientList.innerHTML = '';
                 for (var i = 1; i <= 15; i++) {
