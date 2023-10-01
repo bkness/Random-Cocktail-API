@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to right, #ff6347, #ff8c00); /* Change colors as per your preference */
+}
+
+.btn-primary:hover {
+    background-color: #ff6347; /* Change to your desired hover color */
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #ff6347, #ff8c00); /* Change colors as per your preference */
+    border: none;
+    transition: background-color 0.3s ease; /* Adjust as needed */
+    border-radius: 10px; /* Adjust the value as needed */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+    transition: background-color 0.3s ease; /* Adjust as needed */
+}
+
+.card {
+    background: linear-gradient(to bottom, #87cefa, #007bff); /* Adjust colors as needed */
+}
+
+
+
